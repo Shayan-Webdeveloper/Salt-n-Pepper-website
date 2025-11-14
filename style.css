@@ -1,265 +1,455 @@
-/* CSS reset */
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     color: white !important;
-}
-@font-face {
-     font-family: 'Futurak';
-     src: url(./Fonts/futurak.ttf);
-}
-@font-face {
-     font-family: 'Apercu';
-     src: url(./Fonts/aperculight.otf);
-}
-html,body{
-     width: 100%;
-     height: 100vh;
-     background-color: black !important;
-}
-img{
-     width: 100%;
-}
-header{
-     padding: 0.45% 5%;
-     background-color: #000;
-}
-nav{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-a{
-     color: black;
-     text-decoration: none;
-}
-/* Header */
-header img{
-     width: 30%;
-}
-header a{
-     color: white !important;
-     font-family: "Inter", sans-serif;
-}
-header ul{
-     list-style: none;
-     display: flex;
-     gap: 5%;
-     justify-content: space-between;
-     align-items: center;
-}
-header ul li{
-     margin-top: 2%;
-}
-header div:nth-child(2){
-     width: 60%;
-}
-.nav-item-1{
-     cursor: pointer;
-}
-.nav-btn-1{
-     border: 1px solid white;
-     padding: 4% 6% !important;
-     border-radius: 3rem;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-.nav-btn-1 button{
-     background-color: transparent;
-     color: white;
-     border: none;
-     cursor: pointer;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-.nav-btn-2{
-     background-color: red;
-     border: 1px solid red;
-     padding: 4% 6% !important;
-     border-radius: 3rem;
-}
-.nav-btn-2 button{
-     background-color: transparent;
-     color: white;
-     border: none;
-     cursor: pointer;
-     white-space: nowrap;
-     display: flex;
-     align-items: center;
-     gap: 10px;
-}
-.nav-btn-2 button span{
-     padding: 5%;
-     background-color: white;
-     color: red !important;
-     border-radius: 50%;
-}
-.nav-btn-2 button span i{
-     color: red !important;
-}
-.btn{
-     display: flex;
-     gap: 5%;
-     width: 50%;
-}
-.mobile-code {
-     display: none !important;
-}
-/* Hero Section */
-.hero-section{
-     padding: 7%;
-     text-align: center;
-}
-.hero-section h1{
-     font-size: 48px;
-     width: 70%;
-     margin: 0 auto;
-     font-family: 'Apercu';
-}
-.hero-section h1 span{
-     font-family: 'futurak';
-}
-.hero-section p{
-     margin-top: 2%;
-     color: #ffffffb3 !important;
-     font-family: 'Apercu';
-}
-.hero-cards{
-     display: flex;
-     justify-content: space-between;
-     gap: 3%;
-     margin-top: 20px;
-}
-.hero-cards > div{
-     flex: 1;
-     flex-shrink: 0;
-}
-.hero-card-4{
-     height: 62%;
-}
-.hero-card{
-     border-radius: 3px;
-     padding: 12% 7%;
-     background-color: white !important;
-}
-.hero-card img{
-     display: block;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-}
+          /* CSS reset */
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               color: white !important;
+          }
+          @font-face {
+               font-family: 'Futurak';
+               src: url(./Fonts/futurak.ttf);
+          }
+          @font-face {
+               font-family: 'Apercu';
+               src: url(./Fonts/aperculight.otf);
+          }
+          html,body{
+               width: 100%;
+               height: 100vh;
+               background-color: black !important;
+          }
+          img{
+               width: 100%;
+          }
+          header{
+               padding: 0.45% 5%;
+               background-color: #000;
+          }
+          nav{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+          a{
+               color: black;
+               text-decoration: none;
+          }
+          /* Header */
+          header img{
+               width: 30%;
+          }
+          header a{
+               color: white !important;
+               font-family: "Inter", sans-serif;
+          }
+          header ul{
+               list-style: none;
+               display: flex;
+               gap: 5%;
+               justify-content: space-between;
+               align-items: center;
+          }
+          header ul li{
+               margin-top: 2%;
+          }
+          header div:nth-child(2){
+               width: 60%;
+          }
+          .nav-item-1{
+               cursor: pointer;
+          }
+          .nav-btn-1{
+               border: 1px solid white;
+               padding: 4% 6% !important;
+               border-radius: 3rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+          .nav-btn-1 button{
+               background-color: transparent;
+               color: white;
+               border: none;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+          .nav-btn-2{
+               background-color: red;
+               border: 1px solid red;
+               padding: 4% 6% !important;
+               border-radius: 3rem;
+          }
+          .nav-btn-2 button{
+               background-color: transparent;
+               color: white;
+               border: none;
+               cursor: pointer;
+               white-space: nowrap;
+               display: flex;
+               align-items: center;
+               gap: 10px;
+          }
+          .nav-btn-2 button span{
+               padding: 5%;
+               background-color: white;
+               color: red !important;
+               border-radius: 50%;
+          }
+          .nav-btn-2 button span i{
+               color: red !important;
+          }
+          .btn{
+               display: flex;
+               gap: 5%;
+               width: 50%;
+          }
+          .mobile-code {
+               display: none !important;
+          }
+          /* Hero Section */
+          .hero-section{
+               padding: 7%;
+               text-align: center;
+          }
+          .hero-section h1{
+               font-size: 48px;
+               width: 70%;
+               margin: 0 auto;
+               font-family: 'Apercu';
+          }
+          .hero-section h1 span{
+               font-family: 'futurak';
+          }
+          .hero-section p{
+               margin-top: 2%;
+               color: #ffffffb3 !important;
+               font-family: 'Apercu';
+          }
+          .hero-cards{
+               display: flex;
+               justify-content: space-between;
+               gap: 3%;
+               margin-top: 20px;
+          }
+          .hero-cards > div{
+               flex: 1;
+               flex-shrink: 0;
+          }
+          .hero-card-4{
+               height: 62%;
+          }
+          .hero-card{
+               border-radius: 3px;
+               padding: 12% 7%;
+               background-color: white !important;
+          }
+          .hero-card img{
+               display: block;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+          }
 
-.hero-cards button{
-     cursor: pointer !important;
-}
-.card-link>button{
-     margin-top: 10%;
-     background: transparent;
-     border: 1px solid gray;
-     padding: 6% 18%;
-     border-radius: 3rem;
-}
-@media(max-width: 1220px){
-     .nav-item-1{
-          width: 10%;
-     }
-     .nav-item-1 img{
-          width: 100%;
-     }
-     .nav-item-2{
-          width: 80% !important;
-     }
-     .nav-item-2 ul{
-          margin: 0 auto !important;
-     }
-}
-@media(max-width : 840px){
-     .nav-item-1{
-          display: none !important;
-     }
-     .nav-item-2{
-          display: none !important;
-     }
-     .mobile-code{
-          display: flex !important;
-          justify-content: space-between;
-          align-items: center;
-          color: white !important;
-     }
-     .mobile-logo{
-          display: flex;
-          justify-content: center;
-          margin-left: 15%;
-     }
-     header{
-          padding: 2% 0.8% !important;
-     }
-     .fa-bars{
-          font-size: 22px;
-     }
-     nav{
-          display: block;
-     }
-     .order{
-     background-color: red;
-     color: white !important;
-     padding: 1rem !important;
-     border-radius: 3rem;
-}
-.hero-section h1{
-     font-size: 36px;
-}
-.hero-cards{
-     flex-direction: column;
-     gap: 20px;
-}
-.hero-card img{
-     width: 50%;
-     margin: 0 auto;
-}
-.card-link>button{
-     margin-top: 4%;
-     background: transparent;
-     border: 1px solid gray;
-     padding: 3% 18%;
-     border-radius: 3rem;
-}
-}
-@media(max-width : 730px){
-     .order{
-          padding: 0.5rem !important;
-          font-size: 12px !important;
-     }
-}
-@media(max-width : 610px){
-     .order{
-          padding: 0.4rem !important;
-          font-size: 8px !important;
-     }
-     .hero-section h1{
-     font-size: 24px;
-}
-}
-@media(max-width : 490px){
-     .order{
-          padding: 0.3rem !important;
-          font-size: 7px !important;
-     }
-     
-}
+          .hero-cards button{
+               cursor: pointer !important;
+          }
+          .card-link>button{
+               margin-top: 10%;
+               background: transparent;
+               border: 1px solid gray;
+               padding: 6% 18%;
+               border-radius: 3rem;
+          }
+          /* Cards */
+          .card-section{
+               background-color: #0F0F0F;
+          }
+          .main-h1{
+               font-family: 'futurak';
+               font-size: 48px;
+               text-align: center;
+          }
+          .sub-h1{
+               font-size: 48px;
+               text-align: center;
+          }
+          section>p{
+               font-family: 'apercu';
+               text-align: center;
+               margin-top: 5px;
+               color: #ffffffb3 !important;
+          }
+          .islamabad{
+               padding: 7%;
+               display: flex;
+               justify-content: space-between;
+          }
+          .isl-text{
+               width: 50%;
+               text-align: left;
+          }
+          .isl-text>p{
+               color: red !important;
+               text-transform: uppercase;
+               letter-spacing: 8px;
+               font-family: 'Apercu';
+          }
+          .isl-text h1{
+               margin-top: 1%;
+               font-family: 'Apercu';
+          }
+          .isl-text h1 span{
+               font-family: 'futurak';
+          }
+          .location{
+               margin-top: 2%;
+               color: #ffffffb3 !important;
+               opacity: 0.8;
+               font-family: 'apercu';
+               display: flex;
+          }
+          .location p{
+               margin-left: 0.3%;
+          }
+          .ph-number{
+               color: #ffffffb3 !important;
+               opacity: 0.8;
+               margin-top: 2%;
+               font-family: 'apercu';
+          }
+          .ph-number a{
+               margin-left: 0.3% !important;
+          }
+          .ph-number i{
+               transform: rotate(90deg);
+          }
+          .islamabad button{
+               cursor: pointer;
+               background: transparent;
+               border: 1px solid grey;
+               margin-top: 5%;
+               padding: 1rem 2rem;
+               border-radius: 3rem;
+               width: fit-content;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 10px;
+               white-space: nowrap;
+          }
+          .islamabad button span{
+               background-color: white;
+               padding: 4%;
+               border-radius: 50%;
+          }
+          .islamabad button span i{
+               color: red !important;
+          }
+          .faisalabad{
+               padding: 7%;
+               display: flex;
+               justify-content: space-between !important;
+               gap: 5%;
+          }
+          .fsl-text{
+               width: 50%;
+               text-align: left;
+          }
+          .fsl-image{
+               width: 50%;
+          }
+          .fsl-text>p{
+               color: red !important;
+               text-transform: uppercase;
+               letter-spacing: 8px;
+               font-family: 'Apercu';
+          }
+          .fsl-text h1{
+               margin-top: 1%;
+               font-family: 'Apercu';
+          }
+          .fsl-text h1 span{
+               font-family: 'futurak';
+          }
+          .faisalabad button{
+               cursor: pointer;
+               background: transparent;
+               border: 1px solid grey;
+               margin-top: 5%;
+               padding: 1rem 2rem;
+               border-radius: 3rem;
+               width: fit-content;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 10px;
+               white-space: nowrap;
+          }
+          .faisalabad button span{
+               background-color: white;
+               padding: 4%;
+               border-radius: 50%;
+          }
+          .faisalabad button span i{
+               color: red !important;
+          }
+          .bahawalpur{
+               padding: 7%;
+               display: flex;
+               justify-content: space-between;
+          }
+          .bhl-text{
+               width: 50%;
+               text-align: left;
+          }
+          .bhl-text>p{
+               color: red !important;
+               text-transform: uppercase;
+               letter-spacing: 8px;
+               font-family: 'Apercu';
+          }
+          .bhl-text h1{
+               margin-top: 1%;
+               font-family: 'Apercu';
+          }
+          .bhl-text h1 span{
+               font-family: 'futurak';
+          }
+          .bahawalpur button{
+               cursor: pointer;
+               background: transparent;
+               border: 1px solid grey;
+               margin-top: 5%;
+               padding: 1rem 2rem;
+               border-radius: 3rem;
+               width: fit-content;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 10px;
+               white-space: nowrap;
+          }
+          .bahawalpur button span{
+               background-color: white;
+               padding: 4%;
+               border-radius: 50%;
+          }
+          .bahawalpur button span i{
+               color: red !important;
+          }
+          /* Media Query */
+          @media(max-width: 1220px){
+               .nav-item-1{
+                    width: 10%;
+               }
+               .nav-item-1 img{
+                    width: 100%;
+               }
+               .nav-item-2{
+                    width: 80% !important;
+               }
+               .nav-item-2 ul{
+                    margin: 0 auto !important;
+               }
+          }
+          @media (max-width: 950px) {
+               .islamabad, .faisalabad, .bahawalpur{
+                    display: block;
+               }
+               .isl-text, .fsl-text, .bhl-text{
+                    width: 100% !important;
+                    margin: 0 auto;
+               }
+               .isl-image, .fsl-image,.bhl-image{
+                    width: 100%;
+               }
+          }
+          @media(max-width : 840px){
+               .nav-item-1{
+                    display: none !important;
+               }
+               .nav-item-2{
+                    display: none !important;
+               }
+               .mobile-code{
+                    display: flex !important;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: white !important;
+               }
+               .mobile-logo{
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 15%;
+               }
+               header{
+                    padding: 2% 0.8% !important;
+               }
+               .fa-bars{
+                    font-size: 22px;
+               }
+               nav{
+                    display: block;
+               }
+               .order{
+               background-color: red;
+               color: white !important;
+               padding: 1rem !important;
+               border-radius: 3rem;
+          }
+          .hero-section h1{
+               font-size: 36px;
+          }
+          .hero-cards{
+               flex-direction: column;
+               gap: 20px;
+          }
+          .hero-card img{
+               width: 50%;
+               margin: 0 auto;
+          }
+          .card-link>button{
+               margin-top: 4%;
+               background: transparent;
+               border: 1px solid gray;
+               padding: 3% 18%;
+               border-radius: 3rem;
+          }
+          }
+          @media(max-width : 730px){
+               .order{
+                    padding: 0.5rem !important;
+                    font-size: 12px !important;
+               }
+          }
+          @media(max-width : 610px){
+               .order{
+                    padding: 0.4rem !important;
+                    font-size: 8px !important;
+               }
+               .hero-section h1{
+               font-size: 24px;
+          }
+          }
+          @media(max-width : 490px){
+               .order{
+                    padding: 0.3rem !important;
+                    font-size: 7px !important;
+               }
+               
+          }
 
-@media(max-width : 370px){
-     .order{
-          padding: 0.1rem !important;
-          font-size: 6px !important;
-     }
-      .hero-section h1{
-     font-size: 16px;
-}
-.hero-section p{
-          font-size: 8px;
-}
-}
+          @media(max-width : 370px){
+               .order{
+                    padding: 0.1rem !important;
+                    font-size: 6px !important;
+               }
+               .hero-section h1{
+               font-size: 16px;
+          }
+          .hero-section p{
+                    font-size: 8px;
+          }
+          }

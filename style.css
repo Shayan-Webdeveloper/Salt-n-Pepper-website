@@ -339,6 +339,96 @@
           .bahawalpur button span i{
                color: red !important;
           }
+          /* Express Section */
+          .express{
+               padding: 7%;
+          }
+          .express>h1{
+               font-size: 48px;
+          }
+          .express-cards{
+               display: flex;
+               justify-content: space-between;
+               align-items: stretch;
+               gap: 3%;
+               flex-wrap: wrap;
+          }
+          .express-card{
+               flex: 1 1 30%;
+               max-width: 33.33%;
+               box-sizing: border-box;
+               min-height: 300px;
+               height: auto;
+               overflow: hidden;
+               display: flex;
+               flex-direction: column;
+               justify-content: flex-start;
+          }
+          .img-18{
+               max-height: 100%;
+               height: auto !important;
+               object-fit: cover;
+               display: block;
+               width: 100%;
+          }
+          .express-card>p{
+               color: red !important;
+               letter-spacing: 8px;
+               text-transform: uppercase;
+               font-size: 12px;
+               margin-top: 2%;
+               text-align: center;
+          }
+          .express-card>h2{
+               margin-top: 2%;
+               text-align: center;
+               font-family: 'apercu';
+          }
+          .express-card>h2>span{
+               font-family: 'futurak';
+          }
+          .express-location{
+               font-size: 12px;
+               justify-content: center;
+               margin: 5% auto 0 auto;
+               text-align: center;
+          }
+          .express-phone{
+               font-size: 12px;
+               justify-content: center;
+               text-align: center;
+               margin: 5% auto 0 auto;
+          }
+          .express-btn{
+               display: flex;
+               justify-content: center;
+               margin-top: 10%;
+          }
+          .express-btn button{
+               background: transparent;
+               border: 1px solid gray;
+               margin: 0 auto;
+               padding: 1rem;
+               border-radius: 3rem;
+               width: 50%;
+               cursor: pointer;
+          }
+          .express-btn span{
+               background-color: white;
+               margin-left: 15px;
+               padding: 4%;
+               border-radius: 50%;
+          }
+          .express-btn i{
+               color: red !important;
+               transform: rotate(-37deg);
+          }
+          .row{
+               margin-top: 5%;
+          }
+          .last-express{
+               justify-content: center !important;
+          }
           /* Media Query */
           @media(max-width: 1220px){
                .nav-item-1{
@@ -353,6 +443,19 @@
                .nav-item-2 ul{
                     margin: 0 auto !important;
                }
+               .express-cards{
+                    display: block;
+               }
+          .express-btn span{
+               padding: 1%;
+          }
+          .express-btn button{
+               width: 100% !important;
+          }
+          .express-card{
+               max-width: 100% !important;
+               display: block;
+          }
           }
           @media (max-width: 950px) {
                .islamabad, .faisalabad, .bahawalpur{
@@ -361,9 +464,23 @@
                .isl-text, .fsl-text, .bhl-text{
                     width: 100% !important;
                     margin: 0 auto;
+                    text-align: center !important;
+               }
+               .isl-text p, .fsl-text p , .bhl-text p{
+                    text-align: center !important;
+               }
+               .location{
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 2%;
                }
                .isl-image, .fsl-image,.bhl-image{
                     width: 100%;
+               }
+               .islamabad button, .faisalabad button, .bahawalpur button{
+                    margin: 2% auto;
                }
           }
           @media(max-width : 840px){

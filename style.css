@@ -110,12 +110,12 @@ header div:nth-child(2){
 }
 /* Hero Section */
 .hero-section{
-     padding: 0 7%;
+     padding: 7%;
      text-align: center;
 }
 .hero-section h1{
      font-size: 48px;
-     width: 78%;
+     width: 70%;
      margin: 0 auto;
      font-family: 'Apercu';
 }
@@ -137,15 +137,13 @@ header div:nth-child(2){
      flex: 1;
      flex-shrink: 0;
 }
+.hero-card-4{
+     height: 62%;
+}
 .hero-card{
      border-radius: 3px;
      padding: 12% 7%;
      background-color: white !important;
-     overflow: hidden;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 150px;
 }
 .hero-card img{
      display: block;
@@ -211,6 +209,24 @@ header div:nth-child(2){
      padding: 1rem !important;
      border-radius: 3rem;
 }
+.hero-section h1{
+     font-size: 36px;
+}
+.hero-cards{
+     flex-direction: column;
+     gap: 20px;
+}
+.hero-card img{
+     width: 50%;
+     margin: 0 auto;
+}
+.card-link>button{
+     margin-top: 4%;
+     background: transparent;
+     border: 1px solid gray;
+     padding: 3% 18%;
+     border-radius: 3rem;
+}
 }
 @media(max-width : 730px){
      .order{
@@ -223,16 +239,27 @@ header div:nth-child(2){
           padding: 0.4rem !important;
           font-size: 8px !important;
      }
+     .hero-section h1{
+     font-size: 24px;
+}
 }
 @media(max-width : 490px){
      .order{
           padding: 0.3rem !important;
           font-size: 7px !important;
      }
+     
 }
+
 @media(max-width : 370px){
      .order{
           padding: 0.1rem !important;
           font-size: 6px !important;
      }
+      .hero-section h1{
+     font-size: 16px;
+}
+.hero-section p{
+          font-size: 8px;
+}
 }
